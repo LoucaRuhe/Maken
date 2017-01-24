@@ -15,7 +15,7 @@ Mijn uitdaging tijdens het vak maken zal zijn om mijn ideeën op een technische 
 Ik ben het blok heel enthousiast gestart met het idee dat ik Node.js en MongoDB zou gaan leren aan mijzelf. Ik heb van Rijk een hele korte uitleg hierover gekregen. Al snel was het kerst vakantie en ben ik voor mijzelf doormiddel van codeacadamy door javascript heen gegaan omdat dit van belang was voor Node.js. Door persoonlijke omstandigheden is Node en Mongo niet gelukt binnen deze weken. Wel wil ik hier nog aan gaan beginnen in het volgende blok. 
 
 
-####Technische Bevindingen
+#### Technische Bevindingen
 
 Omdat ik dus een andere manier van prototypen moest gaan vinden ben ik als eerste gestart met HTML en CSS. Ik heb geprobeerd mijn schermen uit te werken in code. Ook had ik veel interacties in gedachte die ik zou moeten maken met JS. Dit lukte mij maar niet. Omdat ik deze micro interactie wel graag wilde laten zien ben ik aan de slag gegaan met Framer. 
 
@@ -27,7 +27,7 @@ Op een geven moment wilde ik een animatie toevoegen maar ik kreeg het maar niet 
 
 Na veel dingen uit proberen en dingen aanpassen heb ik het meeste kunnen toevoegen zoals ik het wilde. 
 
-####Wat heb ik geleerd?
+#### Wat heb ik geleerd?
 
 In een aantal dagen heb ik heel veel geleerd om met framer te kunnen werken. Heel veel is uiteindelijk uitproberen en aanpassen. Het fijne aan framer is dat ik kleine micro interacties aan mijn prototype heb kunnen toevoegen waarbij ik in mijn HTML en CSS prototype geen raad mee wist. 
 
