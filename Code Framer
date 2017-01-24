@@ -1,0 +1,189 @@
+# Import file "Oefening suggesties" (sizes and positions are scaled 1:2)
+#LoucaRuhe
+sketch = Framer.Importer.load("imported/Oefening suggesties@2x")
+
+
+
+#scrollen van pagina's
+scroll = ScrollComponent.wrap sketch.scroll
+scroll.scrollHorizontal = false
+
+scroll = ScrollComponent.wrap sketch.scroll1
+scroll.scrollHorizontal = false
+
+scroll = ScrollComponent.wrap sketch.scroll2
+scroll.scrollHorizontal = false
+
+scroll = ScrollComponent.wrap sketch.scroll3
+scroll.scrollHorizontal = false
+
+scroll = ScrollComponent.wrap sketch.scroll4
+scroll.scrollHorizontal = false
+
+
+
+scroll.on Events.Scroll, ->
+	if scroll.scrollY <= 0 then scroll.scrollY = 0
+	
+
+#Making catagories clickable
+
+#Controledwang
+sketch.oefeningen.states.active =
+	x: 0
+	
+sketch.oefeningbekijken.onClick (event, layer) ->
+	sketch.oefeningen.animate "active"
+	sketch.oefeningen.animate
+	
+sketch.vorige.onClick (event, layer) ->
+	sketch.oefeningen.animate "default"
+	sketch.oefeningen.animate
+
+#Smetvrees
+sketch.oefeningen1.states.active =
+	x: 0
+	
+sketch.Oefening_bekijken.onClick (event, layer) ->
+	sketch.oefeningen1.animate "active"
+	sketch.oefeningen1.animate
+	
+sketch.vorige.onClick (event, layer) ->
+	sketch.oefeningen1.animate "default"
+	sketch.oefeningen1.animate
+
+#Symmetrie
+sketch.oefeningen2.states.active =
+	x: 0
+	
+sketch.Oefening_bekijken1.onClick (event, layer) ->
+	sketch.oefeningen2.animate "active"
+	sketch.oefeningen2.animate
+	
+sketch.vorige.onClick (event, layer) ->
+	sketch.oefeningen2.animate "default"
+	sketch.oefeningen2.animate
+
+#ASRdwang
+sketch.oefeningen3.states.active =
+	x: 0
+	
+sketch.Oefening_bekijken2.onClick (event, layer) ->
+	sketch.oefeningen3.animate "active"
+	sketch.oefeningen3.animate
+	
+sketch.vorige.onClick (event, layer) ->
+	sketch.oefeningen3.animate "default"
+	sketch.oefeningen3.animate
+
+
+#Filter
+
+sketch.Filter.states.active =
+	y:150
+
+sketch.search.onClick (event, layer) ->
+	sketch.Filter.animate "active"
+	sketch.Filter.animate
+	
+sketch.Opslaanknop1.onClick (event, layer) ->
+	sketch.Filter.animate "default"
+	sketch.Filter.animate
+	
+
+#Filterslider
+
+
+sketch.sliderknop2.draggable.enabled = true
+sketch.sliderknop2.draggable.vertical = false
+sketch.sliderknop2.draggable.constraints =
+	x: 36
+	y: 624
+	width: 670
+	height: 8
+	
+sketch.sliderknop3.draggable.enabled = true
+sketch.sliderknop3.draggable.vertical = false
+sketch.sliderknop3.draggable.constraints =
+	x: 36
+	y: 624
+	width: 670
+	height: 8
+
+
+#Navigation
+
+sketch.mijnoefeningen2.states.active =
+	x: 0
+	
+sketch.Mijn.onClick (event, layer) ->
+	sketch.mijnoefeningen2.animate "active"
+	sketch.mijnoefeningen2.animate
+
+sketch.alle.onClick (event, layer) ->
+	sketch.mijnoefeningen2.animate "default"
+	sketch.mijnoefeningen2.animate
+	
+sketch.vorige.onClick (event, layer) ->
+	sketch.mijnoefeningen2.animate "default"
+	sketch.mijnoefeningen2.animate
+	
+sketch.vorige.onClick (event, layer) ->
+	sketch.balkje.animate "default"
+	sketch.balkje.animate
+	
+sketch.alle.onClick (event, layer) ->
+	sketch.mijnoefeningen1.animate "default"
+	sketch.mijnoefeningen1.animate
+
+sketch.balkje.states.active =
+	x: 377
+
+sketch.Mijn.onClick (event, layer) ->
+	sketch.balkje.animate "active"
+	sketch.balkje.animate
+
+	
+sketch.alle.onClick (event, layer) ->
+	sketch.balkje.animate "default"
+	sketch.balkje.animate
+
+
+#Oefeningen verwijderen mijn oefening
+
+sketch.mijnoefeningen1.states.active =
+	x: 0
+
+sketch.Delete21.onClick (event, layer) ->
+	sketch.mijnoefeningen1.animate "active"
+	sketch.mijnoefeningen1.animate
+	
+
+#Bewerken
+
+sketch.Bewerken.states.active =
+	x: 0
+
+sketch.Edit11.onClick (event, layer) ->
+	sketch.Bewerken.animate "active"
+	sketch.Bewerken.animate
+	
+sketch.Opslaanknop.onClick (event, layer) ->
+	sketch.Bewerken.animate "default"
+	sketch.Bewerken.animate
+
+sketch.sliderknop.draggable.enabled = true
+sketch.sliderknop.draggable.vertical = false
+sketch.sliderknop.draggable.constraints =
+	x: 71
+	y: 300
+	width: 448
+	height: 8
+
+sketch.sliderknop1.draggable.enabled = true
+sketch.sliderknop1.draggable.vertical = false
+sketch.sliderknop1.draggable.constraints =
+	x: 71
+	y: 300
+	width: 448
+	height: 8
